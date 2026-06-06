@@ -32,15 +32,15 @@
             <h2>Галерея моделей</h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <img src="images/photo1.webp" alt="Модель космический корабль" loading="lazy">
+                    <img src="h/images/photo1.webp" alt="Модель космический корабль" loading="lazy">
                     <p>Космический корабль</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/photo2.webp" alt="Модель средневековый замок" loading="lazy">
+                    <img src="h/images/photo2.webp" alt="Модель средневековый замок" loading="lazy">
                     <p>Средневековый замок</p>
                 </div>
                 <div class="gallery-item">
-                    <img src="images/photo3.webp" alt="Модель гоночный автомобиль" loading="lazy">
+                    <img src="h/images/photo3.webp" alt="Модель гоночный автомобиль" loading="lazy">
                     <p>Гоночный автомобиль</p>
                 </div>
             </div>
@@ -48,22 +48,28 @@
 
         <!-- БЛОК ВИДЕО (с ленивой загрузкой) -->
         <section class="video-section">
-            <h2>Видеообзор</h2>
-            <div class="video-container">
-                <div class="video-placeholder" id="videoPlaceholder">
-                    <button class="btn-load-video" id="loadVideoBtn">▶ Загрузить видео</button>
-                    <p>Нажмите, чтобы посмотреть презентацию</p>
-                </div>
-                <div id="videoWrapper" style="display: none;"></div>
-            </div>
-        </section>
+    <h2>Видеообзор</h2>
+    <div class="video-container" style="max-width: 800px; margin: 0 auto; width: 100%;">
+        <!-- Стандартный плеер, который работает везде и всегда -->
+        <video controls width="100%" height="auto" poster="" style="display: block; border-radius: 8px;">
+            <!-- Замените "my-video.mp4" на точное название вашего видео-файла -->
+            <source src="h/images/чзи щкебеди.mp4" type="video/mp4">
+            Ваш браузер не поддерживает тег видео.
+        </video>
+    </div>
+</section>
+
+
+
+
+
 
         <!-- БЛОК АУДИО -->
         <section class="audio-section">
             <h2>Аудио-сообщение</h2>
             <div class="audio-card">
                 <audio controls preload="metadata">
-                    <source src="audio/message.mp3" type="audio/mpeg">
+                    <source src="h/audio/message.mp3" type="audio/mpeg">
                     Ваш браузер не поддерживает аудиоплеер
                 </audio>
                 <p class="audio-description">🎙️ Короткое приветствие от разработчика</p>
